@@ -52,10 +52,6 @@ class ExpandableCard extends StatefulWidget {
     this.animationDuration,
     this.expandOnTap = true,
   })  : assert(
-          detailsBuilder == null || !initiallyExpanded,
-          'Cannot start expanded if detailsBuilder is not null',
-        ),
-        assert(
           childBuilder != null || advancedChildBuilder != null,
           'Either childBuilder or advancedChildBuilder must be provided',
         ),
